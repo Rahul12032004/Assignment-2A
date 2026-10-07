@@ -460,6 +460,12 @@ section.problem {
   margin-left: 1rem;
 }
 
+.action ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
 
 .action ul li {
   border: solid 1px #dedede;
@@ -806,9 +812,10 @@ form#contactForm {
 /* ############ 10. Media Queries ############ */
 
 /* ############ 10a. Media Query, (min-width: 700px) ############ */
- {
+@media screen and (min-width: 700px) {
+
   /* ######### 10a-i. HERO, Large screen rules ######### */
-  header.h@media screen and (min-width: 700px)ero {
+  header.hero {
     background: url(../images/header1_lg.jpg) no-repeat center left;
     background-size: cover;
     text-align: left;
