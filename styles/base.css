@@ -896,7 +896,10 @@ form#contactForm {
   }
 
   .teamMembers {
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
   .team p {
     border-right: solid 1px #dedede;
