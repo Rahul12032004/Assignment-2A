@@ -848,7 +848,10 @@ form#contactForm {
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
   .tripList {
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
   .trips article {
     width: 90%;
