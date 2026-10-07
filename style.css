@@ -175,3 +175,67 @@ nav a.btn {
     display: block;
   }
 }
+/* ==========================================================================
+   3. Trips Section
+   ========================================================================== */
+
+.trips {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-block: var(--gap-large);
+  padding-inline: 1.5rem;
+}
+
+.trips > article {
+  text-align: center;
+  margin-block-end: 2.5rem;
+}
+
+.trips h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-block-end: 1rem;
+}
+
+/* Mobile-first: one-column grid */
+.tripList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-standard);
+  list-style: none;
+}
+
+.tripList li {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tripList li img {
+  border-radius: 0.25rem;
+  margin-block-end: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tripList li h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-block-end: 0.5rem;
+}
+
+.tripList li p {
+  margin-block-end: 1rem;
+  font-size: 0.95rem;
+}
+
+.tripList li a {
+  color: var(--color-secondary);
+  font-weight: bold;
+  align-self: flex-start;
+}
