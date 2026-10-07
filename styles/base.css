@@ -1009,10 +1009,22 @@ form#contactForm {
 }
 
   .form h3 {
-  }
+  font-size: 1.8rem;
+  color: #fff;
+  margin-block-end: 0.5rem;
+  text-align: center;
+}
 
-  .form p.formIntro {
-  }
+.form p.formIntro {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #dedede;
+  margin-block-end: 1.5rem;
+  text-align: center;
+  max-width: 45rem;
+  margin-inline: auto;
+}
 
   .social article {
     max-width: 580px;
