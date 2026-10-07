@@ -239,3 +239,26 @@ nav a.btn {
   font-weight: bold;
   align-self: flex-start;
 }
+/* ==========================================================================
+   4. Call To Action (CTA) Sections
+   ========================================================================== */
+
+.cta {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding-block: 3rem;
+  padding-inline: 1.5rem;
+  margin-block: 2rem;
+}
+
+.cta h1 {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  margin-block-end: 1rem;
+}
+
+.cta p {
+  max-width: 45rem;
+  margin-inline: auto;
+}
