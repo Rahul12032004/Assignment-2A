@@ -518,20 +518,19 @@ section.problem {
 /* ############ 8. Gallery ############ */
 .gallery {
   max-width: 1200px;
-  margin: auto;
-}
-
-.gallery h1 {
-  text-align: center;
-  color: #223055;
-  padding: 0 1rem;
-  margin-bottom: 0.5rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 .galleryWrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+
+.galleryWrap img {
+  width: 100%;
+  height: auto;
 }
 
 .galleryWrap img[src$="_w.jpg"] {
@@ -970,49 +969,65 @@ form#contactForm {
     display: none;
   }
 
-  /* ######### 10a-viii. Footer, Large screen rules ######### */
-  footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+ /* ######### 10a-viii. Footer, Large screen rules ######### */
+footer {
+  display: block;
 }
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
-  .social h3 {
-    border-bottom: none;
-    padding: 0.5rem 1rem 0.5rem 0;
-    text-align: right;
-  }
+/* ######### 10a-viii. Footer, Large screen rules ######### */
+footer {
+  display: block;
+}
 
-  .social article {
-    height: 100%;
-  }
+.form {
+  grid-row: span 2;
+}
 
-  .socialIcons {
-    border-left: solid #fff 1px;
-    font-size: 150%;
-    padding: 0.5rem 0 0.5rem 1rem;
-  }
+.social {
+  display: flex;
+}
 
-  .socialIcons a {
-    display: block;
-  }
+.social article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-  .contactInfo {
-    background-color: #b6e8ff;
-    color: #233156;
-    padding: 1rem 0 0;
-  }
+.social h3 {
+  border-bottom: none;
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-align: right;
+}
+
+.socialIcons {
+  border-left: solid #fff 1px;
+  font-size: 150%;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.socialIcons a {
+  display: block;
+}
+
+.contactInfo {
+  background-color: #b6e8ff;
+  color: #233156;
+  padding: 1rem 0 0;
 }
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
   .form {
-  max-width: 1000px;
-  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem;
 }
 
   .form h3 {
