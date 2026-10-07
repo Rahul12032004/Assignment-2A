@@ -124,3 +124,54 @@ nav a.btn {
   border-radius: 0.25rem;
   color: #fff;
 }
+
+/* Mobile Navigation */
+@media (max-width: 47.99rem) {
+  .navToggleLabel {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .navToggleLabel span,
+  .navToggleLabel span::before,
+  .navToggleLabel span::after {
+    display: block;
+    background-color: var(--color-dark);
+    height: 0.125rem;
+    width: 1.75rem;
+    position: relative;
+  }
+
+  .navToggleLabel span::before,
+  .navToggleLabel span::after {
+    content: "";
+    position: absolute;
+  }
+
+  .navToggleLabel span::before {
+    bottom: 0.5rem;
+  }
+
+  .navToggleLabel span::after {
+    top: 0.5rem;
+  }
+
+  .navWrap nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    inset-inline: 0;
+    background-color: #fff;
+    padding: 1.5rem;
+  }
+
+  .navWrap nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navToggle:checked ~ nav {
+    display: block;
+  }
+}
