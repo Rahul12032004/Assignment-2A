@@ -965,10 +965,14 @@ form#contactForm {
 
   /* ######### 10a-viii. Footer, Large screen rules ######### */
   footer {
-  }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
-  .contact {
-  }
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
   .social h3 {
     border-bottom: none;
