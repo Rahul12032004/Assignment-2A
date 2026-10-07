@@ -460,11 +460,6 @@ section.problem {
   margin-left: 1rem;
 }
 
-.action ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
 
 .action ul li {
   border: solid 1px #dedede;
@@ -796,9 +791,9 @@ form#contactForm {
 /* ############ 10. Media Queries ############ */
 
 /* ############ 10a. Media Query, (min-width: 700px) ############ */
-@media screen and (min-width: 700px) {
+ {
   /* ######### 10a-i. HERO, Large screen rules ######### */
-  header.hero {
+  header.h@media screen and (min-width: 700px)ero {
     background: url(../images/header1_lg.jpg) no-repeat center left;
     background-size: cover;
     text-align: left;
@@ -893,6 +888,11 @@ form#contactForm {
   .cta h1 {
     margin-right: 1rem;
   }
+  /* ######### 10a-vii. Actions, Large screen rules ######### */
+
+  .action ul {
+  grid-template-columns: repeat(3, 1fr);
+}
 
   /* ######### 10a-v. Team, Large screen rules ######### */
   .team {
