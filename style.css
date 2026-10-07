@@ -372,7 +372,6 @@ footer {
   margin-block-start: 1rem;
 }
 
-
 /* ==========================================================================
    7. Media Queries - Wider Screens
    ========================================================================== */
@@ -438,4 +437,33 @@ footer {
 .teamMembers img {
   width: 100%;
   border-radius: var(--radius-card);
+}
+
+/* ==========================================================================
+   9. Photo Gallery
+   ========================================================================== */
+
+.gallery {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-block: var(--gap-large);
+  padding-inline: 1.5rem;
+}
+
+.gallery h1 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-block-end: 1.5rem;
+}
+
+.galleryWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.galleryWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
