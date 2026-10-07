@@ -460,6 +460,12 @@ section.problem {
   margin-left: 1rem;
 }
 
+.action ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
 .action ul li {
   border: solid 1px #dedede;
   border-radius: 6px;
