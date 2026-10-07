@@ -701,6 +701,9 @@ input[type="radio"]:checked ~ span:before {
 /*  ########### NEW CODE START (05_03) ########### */
 form#contactForm {
   max-width: initial;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .contactForm div {
