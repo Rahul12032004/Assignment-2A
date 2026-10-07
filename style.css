@@ -295,3 +295,62 @@ nav a.btn {
   color: var(--color-accent);
   font-size: 2rem;
 }
+
+/* ==========================================================================
+   6. Contact Form
+   ========================================================================== */
+
+footer {
+  background-color: var(--color-dark);
+  color: #fff;
+  padding-block: 3rem;
+}
+
+.form {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  margin-block-end: 3rem;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-block-start: 1.5rem;
+}
+
+.contactForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  margin-block-end: 0.25rem;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="tel"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contactForm .radioBtns,
+.contactForm .checks {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactForm button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
