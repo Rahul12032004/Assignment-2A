@@ -698,7 +698,7 @@ input[type="radio"]:checked ~ span:before {
 }
 
 /*  ########### Note viewers, I am going to place all of our new code for the 05_03 lecture here, in between these new code start/end comments. I will end up deleting these comments once we hvae finished. I just want you to be clear on what is different compared with what we had before :) ########### */
-/*  ########### NEW CODE START (05_03) ########### */
+/* ########### NEW CODE START (05_03) ########### */
 form#contactForm {
   max-width: initial;
   display: grid;
@@ -711,22 +711,34 @@ form#contactForm {
 }
 
 .contactForm div:nth-child(1) {
+  margin-bottom: 1rem;
 }
 
 .contactForm div:nth-child(2) {
+  margin-bottom: 1rem;
 }
 
 .contactForm div:nth-child(3) {
+  margin-bottom: 1rem;
 }
 
 .contactForm div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .contactForm div:nth-child(5) {
+  margin-bottom: 1rem;
 }
 
 .contactForm div:nth-child(6) {
   margin: 1.8rem 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .contactForm button {
@@ -736,7 +748,7 @@ form#contactForm {
 .contactForm textarea {
   max-width: 100%;
 }
-/*  ########### NEW CODE END (05_03) ########### */
+/* ########### NEW CODE END (05_03) ########### */
 
 /* ######### 9b. Footer > Connect ######### */
 .social,
