@@ -405,3 +405,37 @@ footer {
     grid-column: span 2;
   }
 }
+
+/* ==========================================================================
+   8. Team Section
+   ========================================================================== */
+
+.team {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-block: var(--gap-large);
+  padding-inline: 1.5rem;
+}
+
+.team h1 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-block-end: 1.5rem;
+}
+
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin-block-end: 2rem;
+}
+
+.teamMembers li {
+  flex: 1 1 8rem;
+}
+
+.teamMembers img {
+  width: 100%;
+  border-radius: var(--radius-card);
+}
