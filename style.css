@@ -1,0 +1,52 @@
+/* ==========================================================================
+   1. CSS Custom Properties (Variables) & Setup
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-primary: #005f73;
+  --color-secondary: #0a9396;
+  --color-accent: #ee9b00;
+  --color-dark: #1d2d44;
+  --color-light: #f8f9fa;
+  --color-text: #2b2d42;
+  --color-bg-card: #ffffff;
+
+  /* Typography */
+  --font-main: "Lato", sans-serif;
+  --font-heading: "Nunito", sans-serif;
+
+  /* Layout & Spacing */
+  --container-width: 75rem;
+  --gap-standard: 1.5rem;
+  --gap-large: 3rem;
+  --radius-card: 0.5rem;
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-light);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
