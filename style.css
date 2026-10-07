@@ -87,3 +87,40 @@ a {
   cursor: pointer;
   font-size: 1rem;
 }
+/* Navigation Layout */
+.navWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navWrap .logo {
+  max-height: 3rem;
+}
+
+.navToggle,
+.navToggleLabel {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav a.btn {
+  background-color: var(--color-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
